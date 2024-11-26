@@ -23,6 +23,7 @@ if (isset($_GET["textarea1"])&& isset($_GET["textarea2"])) {
     $valorTextArea1 = $_GET["textarea1"];
     $valorTextArea2 = $_GET["textarea2"];
 
+//esto es para contar las vocales de cada palabra introducida en el textarea
     $textarea1_a= substr_count( $valorTextArea1,"a");
     $textarea1_e= substr_count( $valorTextArea1,"e");
     $textarea1_i= substr_count( $valorTextArea1,"i");
@@ -35,7 +36,7 @@ if (isset($_GET["textarea1"])&& isset($_GET["textarea2"])) {
     $textarea2_o= substr_count( $valorTextArea2,"o");
     $textarea2_u= substr_count( $valorTextArea2,"u");
 
-
+//tabla que muestra la informacion en horizontal
     echo"<table>
          <tr>
          <th>Texto</th>       
