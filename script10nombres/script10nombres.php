@@ -15,7 +15,7 @@ pantalla los que empiecen por una letra dada que se solicitará por pantalla.
     <div>
     <input type="text" name="nombre0" id="">
     </div>
-    <div>
+    <div> 
     <input type="text" name="nombre1" id="">
     </div>
     <div>
