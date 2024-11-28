@@ -32,7 +32,7 @@ for ($i = 0; $i < 20; $i++) {
 if (isset($_GET["pedirNumeros"])){
 /* asi se haria si solo fuesee un valor
     $valor = $_GET["pedirNumeros"]; */
-
+//cada vez que se haga un for en el input hay que hacer un array_map para pillar los valores introducidos en los input
     $valores = array_map("intval", $_GET["pedirNumeros"]);
     // esto es para imprimir arrays,  con el echo no se puede
     print_r($valores);
