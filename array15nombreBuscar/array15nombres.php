@@ -25,10 +25,11 @@ if(isset($_GET["palabraLetra"])){
 
 
     $array = ["tecnología", "innovación", "desarrollo", "programación", "diseño", "creatividad", "frontend", "backend", "software", "hardware", "proyecto", "código", "aprendizaje", "experiencia", "rendimiento"];
-
+    ///foreach para recorrer cada posicion del array, en la primera posicion va el nombre del array y despues del as va el nombre del foreach
     foreach ($array as $palabraGuardada ) {
         //en el haystack va el nombre de la variable llamada $palabraGuardada que es cada palabra del array
         //y el needle por lo que se filtra
+        //el str_contains busca la palabra que contenga las letras que le pasamos en el input tipo text
         if (str_contains($palabraGuardada, $palabraLetra)) {
             echo "$palabraGuardada";
         }
