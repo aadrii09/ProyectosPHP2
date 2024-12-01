@@ -8,7 +8,8 @@
 <body>
 
 <?php
-
+//hacemos un diccionario con el valor de cada divisa
+//es decir el significado de dolar es 1.09€
 $arrayDivisas= array("Dolar"=>1.09, 
                     "Libra"=>0.88 , 
                     "Peso Mexicano"=>19.67);
