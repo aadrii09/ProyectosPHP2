@@ -33,14 +33,14 @@ if (isset($_GET["pedirNumeros"])){
 /* asi se haria si solo fuesee un valor
     $valor = $_GET["pedirNumeros"]; */
 //cada vez que se haga un for en el input hay que hacer un array_map para pillar los valores introducidos en los input
-    $valores = array_map("intval", $_GET["pedirNumeros"]);
+    $ArrayValores = array_map("intval", $_GET["pedirNumeros"]);
     // esto es para imprimir arrays,  con el echo no se puede
-    print_r($valores);
+    print_r($ArrayValores);
     echo"<br>";
-    $maximo=max($valores);
-    $minimo=min($valores);
+    $maximo=max($ArrayValores);
+    $minimo=min($ArrayValores);
     // para recorrer un array usamos un foreach y el segundo $ puedo llamarle de cuaquier forma pero el primero $ es el nombre del array
-    foreach ($valores as $valor) {   
+    foreach ($ArrayValores as $valor) {   
         if ($valor == $maximo) {
             echo"$valor es el maximo <br>";
             
