@@ -18,21 +18,24 @@ vamos a estudiar NOMBREDELAMATERIA</h1>
 
 <?php
 
-$arrayAsignaturas=array(
-"lunes"=>"Despliegue de aplicaciones web"
-,"martes"=>"Backend"
-,"miercoles"=>"Backend"
-,"jueves"=>"Fronted"
-,"viernes"=>"Empresas"
-,"sabado"=>"Nada"
-,"domingo"=>"Nada"
-);
+
 
 if(isset( $_GET["diaSemana"] )){
     $diaSemana= $_GET["diaSemana"];
+    $arrayAsignaturas=array(
+        "lunes"=>"Despliegue de aplicaciones web"
+        ,"martes"=>"Backend"
+        ,"miercoles"=>"Backend"
+        ,"jueves"=>"Fronted"
+        ,"viernes"=>"Empresas"
+        ,"sabado"=>"Nada"
+        ,"domingo"=>"Nada"
+        );
     //para q lo pase a minusculas
     $diaSemanaMinusculas = strtolower( $diaSemana );
+    //con esto comprobamos que lo que puso el usuario en el inp esta dentro del array
     if(array_key_exists($diaSemanaMinusculas,$arrayAsignaturas)){
+        //aqui con el nombre de asignatura estoy cogiendo el valor del igual de dia de la semana(martes=backend)
         $asignatura = $arrayAsignaturas[$diaSemanaMinusculas];
         echo"el $diaSemanaMinusculas toca $asignatura ";
     }else{
