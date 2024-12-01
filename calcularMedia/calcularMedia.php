@@ -18,8 +18,9 @@
 
     <?php
 if(isset($_GET["notaIntroducida"])){
-
+    //para llmar al inp del for hay q hacerlo con un array y array_map
     $notas = array_map("intval", $_GET["notaIntroducida"]);
+    //pillo la cantidad de notas introducidas para mas tarde dividirlo entre la suma del array notas
     $cantidad = count($notas);
     $sumaNotas = array_sum($notas)/$cantidad;
 
@@ -31,6 +32,8 @@ if(isset($_GET["notaIntroducida"])){
     }elseif($sumaNotas<5){
         echo"$sumaNotas suspenso";    
     }
+
+    
 }
     ?>
 
