@@ -17,7 +17,7 @@
     if(isset($_GET["texto"])){
 
         $texto=$_GET["texto"];
-
+        //strrev es para leer strings del reves al introducido en el inp
         if($texto== strrev($texto)){
         echo "$texto es un polindromo";
         }else{
