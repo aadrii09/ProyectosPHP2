@@ -15,7 +15,7 @@ for ($i = 0; $i < 10; $i++){
     //estamos creando con la funcion mt_rand un numero aleatorio entre -100 100 pero como esta dentro del
     //for crea 10 numeros aleatorios
    $num = mt_rand(-100, 100);
-    //esto es mejor q un if else
+    //esto es mejor q un if else y oara hacerlo hay que crear una variable
    $positivoNegativo=($num < 0)?"$num es negativo":"$num es positivo";
    echo"$positivoNegativo <br>";
 }
