@@ -52,6 +52,7 @@ $cambio=$_GET["cambio"];
 if(array_key_exists($cambio,$arrayDivisas)){
     //con esto estoy guardando el valor de la divisa
     $calculo = $arrayDivisas[$cambio];
+    
     $calculoFinal = $calculo * $cantidad;
     echo"el cambio es $calculoFinal";
 
