@@ -25,9 +25,8 @@ echo "<input type= 'text' name='pedirEdad[]'> <br>";
 <?php
 
 if (isset($_GET["pedirEdad"])){
-
+    //para pillar los valores que hay en el for
     $edades = array_map("intval", $_GET["pedirEdad"]);
-    
 
     foreach ($edades as $valor) {   
         if ($valor < 18) {
